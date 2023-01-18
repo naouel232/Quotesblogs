@@ -1,17 +1,134 @@
 <html lang="en">
     <%- include('./partials/head.ejs') %>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>virtual sweet</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+</head>
 <body>
-    <%- include('./partials/nav.ejs') %>
+        <%- include('./partials/nav.ejs') %>
+    <section class="top-page">
+        <header class="header">
+            <img src="../images/logoo.jpg" alt="logo du site">
+            <nav class="nav" >
+                <li><a href="#services" >Accueil</a></li>
+                <li><a href="#bests-items">Nos meilleures ventes</a></li>
+                <li><a href="#all-plants">Nos specialités</a></li> 
+            </nav>
+        </header>
+            <div class="landing-page">
+                <h1 class="big-title">Les Délices du tiroire</h1>
+           <a class="scroll-down" href="#services">scroll<i class="fas fa-angle-down"></i></a>
+            </div>
+     
+    
+    </section>
+    <section class="services" id="services">
+        <div>
+            <a href="/blogs/" class="service-item">
+            <i class="fas fa-store delivery-icon"></i>
+            <p class="service-details">Nos magasins à votre service</p>
+                
+        </div>
+        >
+        <div >
+        <a href="/blogs/" class="service-item">
+            <i class="fas fa-people-carry delivery-icon"></i>
+            <p class="service-details">passer une commande</p>
+        </a>
+        </div>
+        <div>
+            <a href="/blogs/" class="service-item">
+            <i class="fas fa-truck delivery-icon"></i>
+            <p class="service-details">Livraison à domicile </p>
+        
+        </div>
+        >
+    </section>
+    <section class="bests-items" id="bests-items">
+        <h2 class="section-title">
+            Nos meilleures ventes
+        </h2>
+        <div class="best-plantes">
+            <a  class="plant-box plant1 no-grid">
+          <div class="plant-details">
+              <p class="plant-name">mini pâté</p>
+              <p class="plant-price">20 DT</p>
+          </div>
+            </a>
+            <a  class="plant-box plant2 no-grid">
+                <div class="plant-details">
+                    <p class="plant-name">brik danouni</p>
+                    <p class="plant-price">10 DT</p>
+                    
+                </div>
+            </a>
+            <a  class="plant-box plant3 no-grid">
+                <div class="plant-details">
+                    <p class="plant-name">mini salés</p>
+                    <p class="plant-price">45 DT</p>
+                </div>
+            </a>
+            <a  class="plant-box plant4 no-grid">
+                <div class="plant-details">
+                    <p class="plant-name">graiba prestige</p>
+                    <p class="plant-price">30 DT</p>
+                </div>
+            </a>
 
-<div class="blog content">
-    <h2>About us</h2>
-    <p> comment faire pour ne plus bruler les etapes</p>
-    <p>parfois l objectif d un challenge quelconque soit si simple ou parait simple que le candidat ait hate a repondre sans pour autant donner importance au planning et introduction et grands lignes du projet </p>
-    <p> aussi grandiose quelle soit paraport au result finale donne envie de bruler tous ces introductions</p>
-    <p>d un point de vue logique et fonctionnel cette atitude pourait etre vrai ou bien correcte mais personne ne peut ecarter l importance du planning et du savoir faire </p>
-    <p>et si on inverse</p>
-</div>
+        </div>
+<section class="all-plants" id="all-plants">
+    <h2 class="section-title">Nos produits 
 
-<%- include('./partials/footer.ejs') %>
+    </h2>
+    <div class="plant-grid">
+        <a  class="plant-grid1 plant-box">
+            <div class="plant-details">
+                <p class="plant-name">madleines</p>
+                <p class="plant-price">25 DT</p>
+            </div>
+        </a>
+        <a  class="plant-grid2 plant-box">
+            <div class="plant-details">
+                <p class="plant-name">kaak warka</p>
+                <p class="plant-price">35 DT</p>
+            </div>
+        </a>
+        <a  class="plant-grid3 plant-box">
+            <div class="plant-details">
+                <p class="plant-name">choux fromage</p>
+                <p class="plant-price">30 DT</p>
+            </div>
+        </a>
+        <a  class="plant-grid4 plant-box">
+            <div class="plant-details">
+                <p class="plant-name">vol au vent</p>
+                <p class="plant-price">40 DT</p>
+            </div>
+        </a>
+        <a  class="plant-grid5 plant-box">
+            <div class="plant-details">
+                <p class="plant-name">youyou</p>
+                <p class="plant-price">20 DT</p>
+            </div>
+        </a>
+        <a  class="plant-grid6 plant-box">
+            <div class="plant-details">
+                <p class="plant-name">batbout</p>
+                <p class="plant-price">25 DT</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+    </section>
+    <footer>
+        <%- include('./partials/footer.ejs') %>
+        
+        <a href="" class="cgv">condition generale de vente</a>
+    </footer>
 </body>
 </html>
